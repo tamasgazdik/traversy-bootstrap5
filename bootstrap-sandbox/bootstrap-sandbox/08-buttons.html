@@ -12,68 +12,95 @@
       <h1 class="mb-5">Buttons</h1>
 
       <!-- Styles -->
-      <button class="">Primary</button>
-      <button class="">Secondary</button>
-      <button class="">Success</button>
-      <button class="">Danger</button>
-      <button class="">Warning</button>
-      <button class="">Info</button>
-      <button class="">Light</button>
-      <button class="">Dark</button>
-      <button class="">Link</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+      <button class="btn btn-link">Link</button>
 
       <br /><br />
 
       <!-- Button Sizes -->
-      <button class="">Regular</button>
-      <button class="">Small</button>
-      <button class="">Large</button>
+      <button class="btn btn-primary">Regular</button>
+      <button class="btn btn-secondary btn-sm">Small</button>
+      <button class="btn btn-warning btn-lg">Large</button>
 
       <br /><br />
 
       <!-- Button States -->
-      <button class="">Regular</button>
-      <button class="">Disabled</button>
-      <button class="">Active</button>
+      <button class="btn btn-primary">Regular</button>
+      <button class="btn btn-primary disabled">Disabled</button>
+      <button class="btn btn-primary active">Active</button>
 
       <br /><br />
 
       <!-- Outline Buttons -->
-      <button class="">Primary</button>
-      <button class="">Secondary</button>
-      <button class="">Success</button>
-      <button class="">Danger</button>
-      <button class="">Warning</button>
-      <button class="">Info</button>
-      <button class="">Light</button>
-      <button class="">Dark</button>
+      <button class="btn btn-outline-primary">Primary</button>
+      <button class="btn btn-outline-secondary">Secondary</button>
+      <button class="btn btn-outline-success">Success</button>
+      <button class="btn btn-outline-danger">Danger</button>
+      <button class="btn btn-outline-warning">Warning</button>
+      <button class="btn btn-outline-info">Info</button>
+      <button class="btn btn-outline-light text-dark">Light</button>
+      <button class="btn btn-outline-dark">Dark</button>
 
       <br /><br />
 
       <!-- Links Formatted as Buttons -->
-      <a href="#" class="">Link Button</a>
-      <a href="#" class="">Link Button</a>
-      <a href="#" class="">Link Button</a>
+      <a href="#" class="btn btn-primary">Link Button</a>
+      <a href="#" class="btn btn-primary btn-lg">Link Button</a>
+      <a href="#" class="btn btn-primary disabled">Link Button</a>
 
       <br /><br />
 
       <!-- Block Buttons -->
-      
+      <div class="d-grid gap-3">
+        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-danger">Cancel</button>
+      </div>
 
       <br /><br />
 
       <!-- Button Group -->
-      
-
+      <div class="btn-group" role="group">
+        <button class="btn btn-primary border-light">Left</button>
+        <button class="btn btn-primary border-light">Middle</button>
+        <button class="btn btn-primary border-light">Right</button>
+      </div>
       <br /><br />
 
       <!-- Button Toolbar -->
+      <div class="btn-toolbar hstack gap-3" role="toolbar">
+        <div class="btn-group">
+          <button class="btn btn-primary border-2 border-light">1</button>
+          <button class="btn btn-primary border-2 border-light">2</button>
+          <button class="btn btn-primary border-2 border-light">3</button>
+        </div>
 
-       <br /><br />
-     
+        <div class="btn-group">
+          <button class="btn btn-primary">4</button>
+          <button class="btn btn-primary">5</button>
+          <button class="btn btn-primary">6</button>
+        </div>
+      </div>
+
+      <br /><br />
 
       <!-- Dropdown Button -->
-     
+      <!-- for dropdowns to work we need the JS file referenced at the bottom -->
+      <div class="dropdown">
+        <!-- class 'dropdown-toggle' and attribute data-bs-toggle="dropdown" is also required for dropdown to work in BS -->
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">Link 1</a></li>
+          <li><a href="#" class="dropdown-item">Link 2</a></li>
+          <li><a href="#" class="dropdown-item">Link 3</a></li>
+        </ul>
+      </div>
 
       <!-- Don't go past here -->
     </div>

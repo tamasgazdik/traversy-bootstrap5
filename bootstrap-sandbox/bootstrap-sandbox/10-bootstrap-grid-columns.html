@@ -12,36 +12,124 @@
       <h1 class="mb-5">Bootstrap Grid Columns</h1>
 
       <!-- Basic Grid Layout -->
+      <div class="row">
+        <div class="col bg-light border border-primary">col 1 of 2</div>
+        <div class="col bg-light border border-primary">col 2 of 2</div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col bg-light border border-danger">col 1 of 3</div>
+        <div class="col bg-light border border-danger">col 2 of 3</div>
+        <div class="col bg-light border border-danger">col 3 of 3</div>
+      </div>
 
       <br /><br />
 
       <!-- Column Sizes -->
+      <div class="row">
+        <div class="col-6 border border-primary">size 6</div>
+        <div class="col-6 border border-primary">size 6</div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 border border-primary">size 3</div>
+        <div class="col-9 border border-primary">size 9</div>
+      </div>
 
       <br /><br />
 
       <!-- Responsive Grid -->
+      <div class="row">
+        <!-- due to -md- the column will have a size of 6 from "md" breakpoint and up -->
+        <div class="col-md-6 border border-primary">size 6</div>
+        <div class="col-md-6 border border-primary">size 6</div>
+      </div>
+
+      <!-- usually you want to use stacking columns -->
+      <div class="row mt-5 justify-content-between">
+        <!-- due to -sm- the column will have a size of 6 from "sm" breakpoint and up
+              however, it will have a size of 3 on "md" and up-->
+        <div class="col-sm-6 col-md-3 border border-primary">variable size</div>
+        <div class="col-sm-6 col-md-3 border border-primary">variable size</div>
+        <div class="col-sm-6 col-md-3 border border-primary">variable size</div>
+        <div class="col-sm-6 col-md-3 border border-primary">variable size</div>
+      </div>
 
       <br /><br />
 
       <!-- Row Cols -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col border border-primary">Column</div>
+        <div class="col border border-primary">Column</div>
+        <div class="col border border-primary">Column</div>
+        <div class="col border border-primary">Column</div>
+        <div class="col border border-primary">Column</div>
+        <div class="col border border-primary">Column</div>
+        <div class="col border border-primary">Column</div>
+        <div class="col border border-primary">Column</div>
+      </div>
 
       <br /><br />
 
       <br /><br />
 
       <!-- Nesting -->
+      <div class="row">
+        <div class="col border border-danger">Column</div>
+        <div class="col border border-danger">Column</div>
+        <div class="col border border-danger">
+          <div class="row">
+            <div class="col text-bg-dark">nested</div>
+            <div class="col text-bg-dark">nested</div>
+            <div class="col text-bg-dark">nested</div>
+          </div>
+        </div>
+      </div>
 
       <br /><br />
 
       <!-- Gutters -->
+      <!-- g- for gutter, the number is the size -->
+      <div class="row g-2">
+        <div class="col-md-4">
+          <div class="p-3 text-bg-primary">content</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-primary">content</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-primary">content</div>
+        </div>
+      </div>
 
       <br /><br />
 
       <!-- Offsetting Columns -->
+      <div class="row mb-5">
+        <!-- offset- number is the size that needs to be offset -->
+        <div class="col-md-4 offset-md-4">
+          <div class="p-3 text-bg-primary">content</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 text-bg-primary">content</div>
+        </div>
+      </div>
+
+      <!-- one way to center stuff... -->
+      <div class="row">
+        <div class="col-md-6 offset-md-3 border border-primary">hello</div>
+      </div>
 
       <br /><br />
 
       <!-- Ordering -->
+      <!-- probably you should never do something like this -->
+      <div class="row">
+        <div class="col border border-danger order-2">Column 1</div>
+        <div class="col border border-danger order-4">Column 2</div>
+        <div class="col border border-danger order-1">Column 3</div>
+        <div class="col border border-danger order-3">Column 4</div>
+      </div>
 
       <!-- Don't go past here -->
     </div>
