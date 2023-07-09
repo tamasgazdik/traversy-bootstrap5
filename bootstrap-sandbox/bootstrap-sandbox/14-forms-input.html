@@ -12,30 +12,137 @@
       <h1 class="mb-5">Forms & Input</h1>
 
       <!-- Basic Form -->
+      <form action="">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            id="email"
+            type="email"
+            class="form-control"
+            placeholder="put email address here"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input id="password" type="password" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <input
+            type="checkbox"
+            name="remember-me"
+            id="remember"
+            class="form-check-input"
+          />
+          <label for="remember" class="form-check-label">Remember Me</label>
+        </div>
+        <input type="submit" value="Login" class="btn btn-primary" />
+      </form>
 
       <br /><br />
 
       <!-- Other Fields -->
       <form>
         <!-- Select Fields -->
+        <div class="mb-3">
+          <select name="selection" id="selection" class="form-select">
+            <option>Choose your favourite number</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
 
         <!-- Textarea -->
+        <div class="mb-3">
+          <textarea
+            name="freetext input"
+            id="freetext-input"
+            class="form-control"
+            placeholder="type your message here..."
+          ></textarea>
+        </div>
 
         <!-- Switch -->
+        <div class="form-check form-switch">
+          <label for="switch" class="form-check-label">
+            switch
+          </label>
+          <input id="switch" type="checkbox" class="form-check-input" />
+        </div>
 
         <!-- Inline Checkboxes -->
+        <div class="mb-3">
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              name=""
+              id="ch1"
+              class="form-check-input"
+              value="option1"
+            />
+            <label for="ch1" class="form-check-label">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              name=""
+              id="ch2"
+              class="form-check-input"
+              value="option2"
+            />
+            <label for="ch2" class="form-check-label">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="checkbox"
+              name=""
+              id="ch3"
+              class="form-check-input"
+              value="option3"
+            />
+            <label for="ch3" class="form-check-label">3</label>
+          </div>
+        </div>
 
         <!-- Toggle Button -->
+        <!-- what the fuck xD putting class btn on label... -->
+        <div class="mb-3">
+          <input type="checkbox" name="" id="btn-check" class="btn-check">
+          <label class="btn btn-primary" for="btn-check" >Button toggle</label>
+        </div>
 
         <!-- Range -->
+        <div class="mb-3">
+          <label for="range" class="form-label">Slide the slider!</label>
+          <input type="range" name="range-slider" id="range" class="form-range" value="20">
+        </div>
 
         <!-- Range Steps -->
+        <div class="mb-3">
+          <label for="range" class="form-label">Slide the slider!</label>
+          <input type="range" name="range-slider" id="range" class="form-range" min="1" max="5" step="1">
+        </div>
+
       </form>
 
       <br /><br />
 
       <!-- Input Groups -->
-      <form></form>
+      <form>
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <input type="email" name="email in input groups" id="email-input-gr" class="form-control" placeholder="Email" />
+        </div>
+      </form>
+
+      <br><br>
+
+      <form action="">
+        <div class="input-group">
+          <input type="text" name="text for submission" id="text-submission" class="form-control" />
+          <button class="btn btn-outline-success">submit</button>
+        </div>
+      </form>
 
       <!-- Don't go past here -->
     </div>

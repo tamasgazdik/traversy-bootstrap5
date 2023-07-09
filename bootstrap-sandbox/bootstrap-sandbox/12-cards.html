@@ -12,14 +12,52 @@
       <h1 class="mb-5">Cards</h1>
 
       <!-- Basic Text Card -->
+      <div class="card" style="width: 15rem">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+            repellendus modi eveniet blanditiis dolorum nisi fugit atque
+            adipisci temporibus possimus!
+          </p>
+        </div>
+      </div>
 
       <br /><br />
 
       <!-- Card With Image -->
+      <div class="card" style="width: 15rem">
+        <img
+          src="https://picsum.photos/200"
+          class="card-img-top"
+          alt="dummy image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+            repellendus modi eveniet blanditiis dolorum nisi fugit atque
+            adipisci temporibus possimus!
+          </p>
+        </div>
+      </div>
 
       <br /><br />
 
       <!-- Header & Footer -->
+      <!-- made it with added text-bg- classes so it's more visible -->
+      <div class="card" style="width: 15rem">
+        <div class="card-header text-bg-success">Card Header</div>
+        <div class="card-body text-bg-warning">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+            repellendus modi eveniet blanditiis dolorum nisi fugit atque
+            adipisci temporibus possimus!
+          </p>
+        </div>
+        <div class="card-footer text-bg-success">Card Footer</div>
+      </div>
 
       <br /><br />
 
@@ -35,14 +73,137 @@
       <br /><br />
 
       <!-- Grid Columns & Colors -->
+      <div class="row row-gap-3">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-bg-success">Card Header</div>
+            <div class="card-body text-bg-warning">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                repellendus modi eveniet blanditiis dolorum nisi fugit atque
+                adipisci temporibus possimus!
+              </p>
+            </div>
+            <div class="card-footer text-bg-success">Card Footer</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-bg-success">Card Header</div>
+            <div class="card-body text-bg-warning">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                repellendus modi eveniet blanditiis dolorum nisi fugit atque
+                adipisci temporibus possimus!
+              </p>
+            </div>
+            <div class="card-footer text-bg-success">Card Footer</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-bg-success">Card Header</div>
+            <div class="card-body text-bg-warning">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                repellendus modi eveniet blanditiis dolorum nisi fugit atque
+                adipisci temporibus possimus!
+              </p>
+            </div>
+            <div class="card-footer text-bg-success">Card Footer</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-bg-success">Card Header</div>
+            <div class="card-body text-bg-warning">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                repellendus modi eveniet blanditiis dolorum nisi fugit atque
+                adipisci temporibus possimus!
+              </p>
+            </div>
+            <div class="card-footer text-bg-success">Card Footer</div>
+          </div>
+        </div>
+      </div>
 
       <br /><br />
 
       <!-- Card Group -->
+      <!-- unifies cards, only the side ones will have border-radius -->
+      <div class="card-group column-gap-3">
+        <div class="card rounded-start-5" style="width: 15rem">
+          <img
+            src="https://picsum.photos/200"
+            class="card-img-top rounded-top-5 rounded-end-0"
+            alt="dummy image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              repellendus modi eveniet blanditiis dolorum nisi fugit atque
+              adipisci temporibus possimus!
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 15rem">
+          <img
+            src="https://picsum.photos/200"
+            class="card-img-top"
+            alt="dummy image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              repellendus modi eveniet blanditiis dolorum nisi fugit atque
+              adipisci temporibus possimus!
+            </p>
+          </div>
+        </div>
+        <div class="card rounded-end-5" style="width: 15rem">
+          <img
+            src="https://picsum.photos/200"
+            class="card-img-top rounded-top-5 rounded-start-0"
+            alt="dummy image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              repellendus modi eveniet blanditiis dolorum nisi fugit atque
+              adipisci temporibus possimus!
+            </p>
+          </div>
+        </div>
+      </div>
 
       <br /><br />
 
       <!-- Placeholders -->
+      <!-- this can be used to indicate that there's some text, however it's still loading -->
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col-5"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span
+            ><span class="placeholder ms-1 col-4"></span
+            ><span class="placeholder col-4"></span
+            ><span class="placeholder ms-1 col-6"></span
+            ><span class="placeholder col-8"></span
+            >
+          </p>
+          <button class="btn btn-primary disabled placeholder col-5"></button>
+        </div>
+      </div>
 
       <!-- Don't go past here -->
     </div>
